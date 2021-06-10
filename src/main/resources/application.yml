@@ -1,0 +1,22 @@
+spring:
+  profiles: default
+  servlet:
+    multipart:
+      enabled: true
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://127.0.0.1:1433;databaseName=DesafioFeijao
+    username: sa
+    password: 'It3r15!@#$'
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+        format-sql: true
+server:
+  port: 8080
+  servlet:
+    contextPath: /
